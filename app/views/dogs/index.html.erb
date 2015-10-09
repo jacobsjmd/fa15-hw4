@@ -1,0 +1,6 @@
+<h1> WHO LET THE DOGS OUT </h1>
+  <% @dogs.each do |dawg| %>
+   <p> Name: <%= link_to dawg.name, dog_path(dawg) %>, Age: <%= dawg.age %> </p>
+  <% end %>
+<h1> WHO, WHO WHO WHO </h1>
+<p> CREATE A DOG <%= link_to "HERE", dogs_new_path %> </p>
